@@ -15,7 +15,6 @@ const Basic1 = () => {
       </form>
       <h1>product name is {product.name}</h1>
       <h1>product price is {product.price}</h1>
-      <div></div>
     </div>
   )
 
