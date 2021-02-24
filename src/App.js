@@ -4,12 +4,17 @@ import './App.css';
 // import BasicUseEffect from './components/BasicUseEffect';
 // import TimerContiner from './components/TimerContiner';
 import ApiFetch from './components/ApiFetch';
+import AppContext from './contexts/AppContext'
+import B from './components/B';
 
 function App() {
   return (
-    <div className="App">
-      <ApiFetch/>
-    </div>
+    <AppContext.Provider value={"value from app.js"}>
+      <div className="App">
+        <ApiFetch/>
+        <B/>
+      </div>
+    </AppContext.Provider>
   );
 }
 
